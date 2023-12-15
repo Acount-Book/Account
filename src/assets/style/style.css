@@ -1,0 +1,94 @@
+body {
+  background-color: rgb(221, 227, 230);
+}
+.appBox {
+  border: 1px solid #000;
+  width: 450px;
+  min-height: 750px;
+  height: fit-content;
+  margin: 30px auto;
+  text-align: center;
+  position: relative;
+  background-color: #eee;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.appBox .globalNav {
+  position: absolute;
+  bottom: 0;
+}
+.appBox .globalNav ul {
+  display: flex;
+}
+.appBox .globalNav ul li {
+  border: 1px solid #eee;
+  background-color: #fff;
+
+  border-left: none;
+  border-bottom: none;
+  border-radius: 7px 7px 0 0;
+  padding: 0 22px;
+  height: 50px;
+  line-height: 75px;
+  font-size: 0.9rem;
+  position: relative;
+}
+.appBox .globalNav ul li:nth-child(1)::before {
+  content: "";
+  background: url(../images/bookicon.svg);
+  width: 30px;
+  height: 30px;
+  display: block;
+  position: absolute;
+  left: 25px;
+}
+.appBox .globalNav ul li:nth-child(2)::before {
+  content: "";
+  background: url(../images/baricon.png);
+  width: 30px;
+  height: 30px;
+  display: block;
+  position: absolute;
+  left: 18px;
+}
+.appBox .globalNav ul li:nth-child(3)::before {
+  content: "";
+  background: url(../images/boxicon.svg);
+  width: 30px;
+  height: 30px;
+  display: block;
+  position: absolute;
+  left: 18px;
+}
+.appBox .globalNav ul li:nth-child(4)::before {
+  content: "";
+  background: url(../images/네잎클로버\ 1.svg) no-repeat;
+  width: 28px;
+  height: 26px;
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 21px;
+}
+.appBox .globalNav ul li a {
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+  color: #f64545;
+  font-weight: bold;
+}
+.logoutBtn {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  border: none;
+  background-color: #111;
+  color: #fff;
+  padding: 7px;
+  font-weight: bold;
+  cursor: pointer;
+}

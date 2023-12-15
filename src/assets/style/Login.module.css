@@ -1,0 +1,42 @@
+@import url("https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css");
+@import url(../fonts/pretendardvariable.css);
+
+body {
+  font-family: Pretendard Variable;
+}
+.LoginContainer {
+  position: relative;
+}
+.my {
+  font-size: 3rem;
+  color: #f64545;
+  font-family: "NanumSquareRound", sans-serif;
+  font-weight: 700;
+}
+.sub {
+  font-size: 4rem;
+  font-weight: 1000;
+}
+.need {
+  color: #767676;
+  font-weight: 800;
+  text-decoration: none;
+}
+.input {
+  border: 2px solid #767676;
+  border-radius: 15px;
+  width: 350px;
+  height: 30px;
+  margin-bottom: 20px;
+}
+.inside {
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  width: 100px;
+  height: 50px;
+  font-weight: bold;
+  font-size: 1.3rem;
+  background-color: #f64545;
+  cursor: pointer;
+}

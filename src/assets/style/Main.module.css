@@ -1,0 +1,79 @@
+@import url("../fonts/pretendardvariable.css");
+
+.textMain {
+  font-family: "Pretendard Variable", Pretendard, -apple-system,
+    BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
+    "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+.expenseWrapper {
+  background-color: #fff;
+  width: 80%;
+  margin: 15px auto;
+  border-radius: 20px;
+  padding: 10px;
+}
+.container {
+  width: 80%;
+  margin: 18px auto;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 25px;
+  text-align: left;
+}
+.container h3 {
+  margin: 3px 3px 10px;
+}
+.container .categoryWrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 15px;
+  margin-top: 5px;
+}
+.container .delBtn {
+  border: none;
+  background-color: #34aaff;
+  padding: 4px 8px;
+  color: #fff;
+  font-weight: 700;
+}
+.titleBox {
+  background-color: #f64545;
+  padding: 15px 0 10px;
+}
+.dropdown {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+.addBtn {
+  position: absolute;
+  bottom: 60px;
+  right: 23px;
+  background-color: #f64545;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.addBtn::before {
+  content: "";
+  width: 20px;
+  height: 4px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.addBtn:after {
+  content: "";
+  width: 4px;
+  height: 20px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

@@ -1,0 +1,40 @@
+@import url(../fonts/pretendardvariable.css);
+/*   font-family: Pretendard Variable; */
+body {
+  font-family: Pretendard Variable;
+}
+.sign {
+  font-size: 2rem;
+  color: #f64345;
+}
+.input {
+  border: 2px solid #767676;
+  border-radius: 15px;
+  width: 350px;
+  height: 30px;
+  margin-bottom: 20px;
+}
+.join {
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  width: 100px;
+  height: 50px;
+  font-weight: bold;
+  font-size: 1.3rem;
+  background-color: #f64545;
+  cursor: pointer;
+  margin-right: 30px;
+}
+.cancel {
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  width: 100px;
+  height: 50px;
+  font-weight: bold;
+  font-size: 1.3rem;
+  background-color: #cacaca;
+  cursor: pointer;
+  margin-right: 30px;
+}
