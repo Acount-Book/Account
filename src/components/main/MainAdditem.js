@@ -3,7 +3,7 @@ import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useExpenseContext } from "../../context/ExpenseContext";
-
+import mainStyle from "../../assets/style/Main.module.css";
 const MainAdditem = () => {
   const { istoggle, setIstoggle, handleAddExpense } = useExpenseContext();
   const navigate = useNavigate();
@@ -80,11 +80,8 @@ const MainAdditem = () => {
 
   return (
     <div>
-      <h2>내역추가</h2>
-      <div>
-        <button onClick={toggleCalendar}>날짜</button>
-        <span>{selectedDate ? selectedDate.toLocaleDateString() : ""}</span>
-      </div>
+      <h2 className={mainStyle.addTitle}>내역추가</h2>
+      <div></div>
       {showModal && showCalendar && (
         <div
           style={{
@@ -116,14 +113,23 @@ const MainAdditem = () => {
           </div>
         </div>
       )}
+      <div className={mainStyle.inputWrapper}>
+        <label htmlFor="money">금액</label>
+        <input
+          type="number"
+          id="money"
+          value={money}
+          onChange={(e) => setMoney(e.target.value)}
+        />
+      </div>
 
-      <input
-        type="number"
-        value={money}
-        onChange={(e) => setMoney(e.target.value)}
-      />
-      <div>
-        <label>카테고리: {selectedCategory}</label>
+      <div className={mainStyle.calendarWrapper}>
+        <button onClick={toggleCalendar}>날짜</button>
+        <span>{selectedDate ? selectedDate.toLocaleDateString() : ""}</span>
+      </div>
+
+      <div className={mainStyle.categoryWrapper}>
+        <label>카테고리: </label> <span>{selectedCategory}</span>
       </div>
       <div className="category-menu">
         <ul>
@@ -134,9 +140,14 @@ const MainAdditem = () => {
           ))}
         </ul>
       </div>
-
-      <button onClick={handleSave}>저장</button>
-      <button onClick={handleCancel}>취소</button>
+      <div className={mainStyle.btnWrapper}>
+        <button onClick={handleSave} className={mainStyle.saveBtn}>
+          저장
+        </button>
+        <button onClick={handleCancel} className={mainStyle.cancelBtn}>
+          취소
+        </button>
+      </div>
     </div>
   );
 };

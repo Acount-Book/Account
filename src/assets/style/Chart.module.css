@@ -1,0 +1,11 @@
+.december {
+  color: #fff;
+  background-color: #f64545;
+  margin: 0;
+  font-size: 1.4rem;
+  padding: 20px;
+  border-radius: 0 0 25px 25px;
+}
+.chartContainer li.recharts-legend-item {
+  margin-left: 50px;
+}

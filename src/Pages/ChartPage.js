@@ -12,7 +12,7 @@ import {
   BarChart,
 } from "recharts";
 import Chart from "chart.js/auto";
-
+import chartStyle from "../assets/style/Chart.module.css";
 const ChartPage = () => {
   const {
     istoggle,
@@ -34,33 +34,38 @@ const ChartPage = () => {
 
   return (
     <>
-      <h2>12월 통계</h2>
-      <LineChart
-        width={460}
-        height={250}
-        data={accountdata}
-        margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
-        <XAxis dataKey="date" />
-        <YAxis />
-        <CartesianGrid strokeDasharray="3 3" />
-        <Tooltip />
-        <Legend />
-        <Line type="monotone" dataKey="total" stroke="#8884d8" />
-      </LineChart>
+      <h2 className={chartStyle.december}>12월 통계</h2>
+      <div className={chartStyle.chartContainer}>
+        <LineChart
+          width={395}
+          height={250}
+          data={accountdata}
+          margin={{ top: 25, right: 0, left: 0, bottom: 0 }}>
+          <XAxis dataKey="date" />
+          <YAxis />
+          <CartesianGrid strokeDasharray="3 3" />
+          <Tooltip />
+          <Legend />
+          <Line type="monotone" dataKey="total" stroke="#8884d8" />
+        </LineChart>
+      </div>
+
       <h3>카테고리별 지출</h3>
-      <LineChart
-        width={460}
-        height={250}
-        data={categoryData}
-        margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
-        <XAxis dataKey="category" />
-        <YAxis />
-        <CartesianGrid strokeDasharray="3 3" />
-        <Tooltip />
-        <Legend />
-        {/* Assuming you have 'total' as the property for category-wise expense */}
-        <Line dataKey="total" fill="#82ca9d" />
-      </LineChart>
+      <div className={chartStyle.chartContainer}>
+        <LineChart
+          width={395}
+          height={250}
+          data={categoryData}
+          margin={{ top: 10, right: 0, left: 0, bottom: 0 }}>
+          <XAxis dataKey="category" />
+          <YAxis />
+          <CartesianGrid strokeDasharray="3 3" />
+          <Tooltip />
+          <Legend />
+          {/* Assuming you have 'total' as the property for category-wise expense */}
+          <Line dataKey="total" fill="#82ca9d" />
+        </LineChart>
+      </div>
     </>
   );
 };
