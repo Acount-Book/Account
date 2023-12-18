@@ -10,6 +10,7 @@
 .input {
   border: none;
   text-align: right;
+  width: 245px;
 }
 /* 흰색 영역 세개 */
 .money {
