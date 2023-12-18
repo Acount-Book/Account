@@ -128,7 +128,7 @@ const MainAdditem = () => {
         <span>{selectedDate ? selectedDate.toLocaleDateString() : ""}</span>
       </div>
 
-      <div className={mainStyle.categoryWrapper}>
+      <div className={mainStyle.categoryWrapper1}>
         <label>카테고리: </label> <span>{selectedCategory}</span>
       </div>
       <div className="category-menu">

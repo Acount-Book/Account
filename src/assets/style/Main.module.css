@@ -120,7 +120,7 @@
   border: none;
   background-color: #fff;
 }
-.categoryWrapper {
+.categoryWrapper1 {
   background-color: #fff;
   width: 80%;
   height: 40px;
@@ -132,11 +132,11 @@
   justify-content: space-between;
   align-items: center;
 }
-.categoryWrapper span {
+.categoryWrapper1 span {
   color: #000;
   margin-right: 50px;
 }
-.categoryWrapper label {
+.categoryWrapper1 label {
   margin-left: 20px;
 }
 .saveBtn {
