@@ -4,8 +4,10 @@ import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
 import { GoalAmountContext } from "../context/GoalAmoutContext";
 import { useGoalContext } from "../context/GoalContext";
+import AimMain from "../assets/style/AimMain.module.css";
 
 const AimMainpage = () => {
+  const [istoggle, setIstoggle] = useState();
   const [selectedDate, setSelectedDate] = useState(new Date());
   const { goalData } = useGoalContext();
   const [showModal, setShowModal] = useState(false);
@@ -52,43 +54,34 @@ const AimMainpage = () => {
     setShowCalendar(!showCalendar);
   };
 
+  const handleButtonClick = () => {
+    setIstoggle(!istoggle);
+    navigate("/aimsub");
+    // Navigate to the "/mainadditem" route
+  };
+
   return (
     <div>
-      <h1>지출 목표</h1>
+      <h1 className={AimMain.Aim}>지출 목표</h1>
       <div>
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "space-around",
-            alignItems: "center",
-          }}>
+        <div className={AimMain.status}>
           <h3>현재 목표</h3>
-          <p onClick={handleToggleCalendar} style={{ cursor: "pointer" }}>
+          <p onClick={handleToggleCalendar} className={AimMain.date}>
             <p>
-              {`${goalData.startDate.getFullYear()}-${
+              {`${goalData.startDate.getFullYear()}.  ${
                 goalData.startDate.getMonth() + 1
-              }-${goalData.startDate.getDate()}`}
-              ~
-              {`${goalData.endDate.getFullYear()}-${
+              }.  ${goalData.startDate.getDate()}`}
+              &nbsp; - &nbsp;
+              {`${goalData.endDate.getFullYear()}  .${
                 goalData.endDate.getMonth() + 1
-              }-${goalData.endDate.getDate()}`}
+              }  .${goalData.endDate.getDate()}`}
             </p>
           </p>
         </div>
-        <div style={{ display: "flex", justifyContent: "space-around" }}>
+        <div className={AimMain.money}>
           <h1>￦{goalAmount || "0"}</h1>
-          <Link to="/aimsub">
-            <p
-              style={{
-                backgroundColor: "#FFE4E4",
-                lineHeight: 4,
-                color: "#F64545",
-                fontWeight: "bold",
-                borderRadius: 40,
-                width: 150,
-                textAlign: "center",
-              }}
-              onClick={() => navigate("/aimsub")}>
+          <Link to="/aimsub" className={AimMain.button}>
+            <p className={AimMain.set} onClick={() => navigate("/aimsub")}>
               목표 등록하기
             </p>
           </Link>
@@ -96,25 +89,8 @@ const AimMainpage = () => {
       </div>
 
       {showModal && showCalendar && (
-        <div
-          style={{
-            position: "fixed",
-            top: 0,
-            left: 0,
-            width: "100%",
-            height: "100%",
-            background: "rgba(0, 0, 0, 0.5)",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-          onClick={handleCalendarClick}>
-          <div
-            style={{
-              background: "#fff",
-              padding: "20px",
-              borderRadius: "10px",
-            }}>
+        <div onClick={handleCalendarClick}>
+          <div>
             <h2>Choose Date</h2>
             <Calendar
               onChange={handleDateChange}
@@ -127,6 +103,7 @@ const AimMainpage = () => {
           </div>
         </div>
       )}
+      <button onClick={handleButtonClick} className={AimMain.addBtn}></button>
     </div>
   );
 };
