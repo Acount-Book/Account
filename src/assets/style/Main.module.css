@@ -84,7 +84,7 @@
   background-color: #fff;
   width: 80%;
   height: 40px;
-  margin: 15px auto;
+  margin: 20px auto;
   border-radius: 20px;
   padding: 10px;
   color: #9e9e9e;
@@ -104,7 +104,7 @@
   background-color: #fff;
   width: 80%;
   height: 40px;
-  margin: 15px auto;
+  margin: 20px auto;
   border-radius: 20px;
   padding: 10px;
   display: flex;
@@ -124,7 +124,7 @@
   background-color: #fff;
   width: 80%;
   height: 40px;
-  margin: 15px auto;
+  margin: 20px auto;
   border-radius: 20px;
   color: #9e9e9e;
   padding: 10px;
@@ -150,6 +150,9 @@
   background-color: #f64545;
   cursor: pointer;
   margin-right: 30px;
+  position: absolute;
+  bottom: 80px;
+  left: 125px;
 }
 .cancelBtn {
   color: #fff;
@@ -161,5 +164,162 @@
   font-size: 1.3rem;
   background-color: #cacaca;
   cursor: pointer;
-  margin-right: 30px;
+
+  position: absolute;
+  bottom: 80px;
+  right: 125px;
+}
+.categoryMenu {
+  width: 80%;
+  background-color: #fff;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 25px;
+  margin-top: 25px;
+}
+.categoryContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  place-items: center;
+  z-index: 0;
+}
+.categoryContainer li {
+  width: 100%;
+  padding: 5px;
+  line-height: 110px;
+  height: 80px;
+  position: relative;
+}
+.categoryContainer li:nth-child(1)::before {
+  content: "";
+  background: url(../images/food.svg) no-repeat;
+  display: block;
+  width: 30px;
+  height: 30px;
+  left: 51%;
+  position: absolute;
+  top: 38%;
+  transform: translate(-38%, -50%);
+}
+.categoryContainer li:nth-child(2)::before {
+  content: "";
+  background: url(../images/Local\ cafe.svg) no-repeat;
+  display: block;
+  width: 30px;
+  height: 30px;
+  left: 50%;
+  position: absolute;
+  top: 38%;
+  transform: translate(-38%, -50%);
+}
+.categoryContainer li:nth-child(3)::before {
+  content: "";
+  background: url(../images/car.svg) no-repeat;
+  display: block;
+  width: 30px;
+  height: 30px;
+  left: 51%;
+  position: absolute;
+  top: 38%;
+  transform: translate(-38%, -50%);
+}
+.categoryContainer li:nth-child(4)::before {
+  content: "";
+  background: url(../images/life.svg) no-repeat;
+  display: block;
+  width: 30px;
+  height: 30px;
+  left: 51%;
+  position: absolute;
+  top: 38%;
+  transform: translate(-38%, -50%);
+}
+.categoryContainer li:nth-child(5)::before {
+  content: "";
+  background: url(../images/3사.svg) no-repeat;
+  display: block;
+  width: 30px;
+  height: 30px;
+  left: 52%;
+  position: absolute;
+  top: 38%;
+  transform: translate(-38%, -50%);
+}
+.categoryContainer li:nth-child(6)::before {
+  content: "";
+  background: url(../images/present.svg) no-repeat;
+  display: block;
+  width: 30px;
+  height: 30px;
+  left: 50%;
+  position: absolute;
+  top: 38%;
+  transform: translate(-38%, -50%);
+}
+.categoryContainer li:nth-child(7)::before {
+  content: "";
+  background: url(../images/game.svg) no-repeat;
+  display: block;
+  width: 30px;
+  height: 30px;
+  left: 49%;
+  position: absolute;
+  top: 42%;
+  transform: translate(-42%, -50%);
+}
+.categoryContainer li:nth-child(8)::before {
+  content: "";
+  background: url(../images/fastion.svg) no-repeat;
+  display: block;
+  width: 30px;
+  height: 30px;
+  left: 51%;
+  position: absolute;
+  top: 38%;
+  transform: translate(-38%, -50%);
+}
+.categoryContainer li:nth-child(9)::before {
+  content: "";
+  background: url(../images/culture.svg) no-repeat;
+  display: block;
+  width: 30px;
+  height: 30px;
+  left: 48%;
+  position: absolute;
+  top: 38%;
+  transform: translate(-38%, -48%);
+}
+.categoryContainer li:nth-child(10)::before {
+  content: "";
+  background: url(../images/doctor.svg) no-repeat;
+  display: block;
+  width: 30px;
+  height: 30px;
+  left: 51%;
+  position: absolute;
+  top: 38%;
+  transform: translate(-38%, -50%);
+}
+.categoryContainer li:nth-child(11)::before {
+  content: "";
+  background: url(../images/home.svg) no-repeat;
+  display: block;
+  width: 30px;
+  height: 30px;
+  left: 49%;
+  position: absolute;
+  top: 38%;
+  transform: translate(-38%, -50%);
+}
+.categoryContainer li:nth-child(12)::before {
+  content: "";
+  background: url(../images/Frame\ 361.svg) no-repeat;
+  display: block;
+  width: 30px;
+  height: 30px;
+  left: 48%;
+  position: absolute;
+  top: 35%;
+  transform: translate(-38%, -50%);
 }

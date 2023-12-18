@@ -94,6 +94,7 @@ const MainAdditem = () => {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
+            zIndex: 1000,
           }}>
           <div
             style={{
@@ -125,14 +126,16 @@ const MainAdditem = () => {
 
       <div className={mainStyle.calendarWrapper}>
         <button onClick={toggleCalendar}>날짜</button>
-        <span>{selectedDate ? selectedDate.toLocaleDateString() : ""}</span>
+        <span className={mainStyle.calendar}>
+          {selectedDate ? selectedDate.toLocaleDateString() : ""}
+        </span>
       </div>
 
       <div className={mainStyle.categoryWrapper1}>
         <label>카테고리: </label> <span>{selectedCategory}</span>
       </div>
-      <div className="category-menu">
-        <ul>
+      <div className={mainStyle.categoryMenu}>
+        <ul className={mainStyle.categoryContainer}>
           {categories.map((category) => (
             <li key={category} onClick={() => setSelectedCategory(category)}>
               {category}
