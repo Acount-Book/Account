@@ -9,6 +9,7 @@
 }
 .input {
   border: none;
+  text-align: right;
 }
 /* 흰색 영역 세개 */
 .money {
@@ -34,4 +35,28 @@
   border: none;
   font-family: Pretendard Variable, sans-serif;
   font-weight: bold;
+}
+
+.join {
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  width: 100px;
+  height: 50px;
+  font-weight: bold;
+  font-size: 1.3rem;
+  background-color: #f64545;
+  cursor: pointer;
+  margin-right: 30px;
+}
+.cancel {
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  width: 100px;
+  height: 50px;
+  font-weight: bold;
+  font-size: 1.3rem;
+  background-color: #cacaca;
+  cursor: pointer;
 }
