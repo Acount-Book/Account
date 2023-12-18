@@ -32,7 +32,7 @@ const Lotto = () => {
   return (
     <div>
       <h1 className={LottoStyles.lucky}>행운의 번호 추첨기</h1>
-      <div style={{ position: "relative" }}>
+      <div style={{ position: "relative" }} className={LottoStyles.imgWrapper}>
         <img
           className={LottoStyles.coin}
           src={`${path}/images/동전뽑기기계.svg`}

@@ -10,12 +10,15 @@
 }
 .coin {
   width: 250px;
-
+  height: 400px;
   margin-top: 50px;
 }
 .handle {
   width: 70px;
   cursor: pointer;
+  position: absolute;
+  top: 302px;
+  left: 192px;
 }
 .numul {
   display: flex;
@@ -25,9 +28,12 @@
 .num {
   width: 50px;
   height: 50px;
-  border-radius: 50px;
+  border-radius: 50%;
   line-height: 50px;
   margin-right: 15px;
   color: #fff;
   font-weight: bold;
+}
+.imgWrapper {
+  position: relative;
 }
