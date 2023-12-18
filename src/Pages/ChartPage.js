@@ -37,10 +37,10 @@ const ChartPage = () => {
       <h2 className={chartStyle.december}>12월 통계</h2>
       <div className={chartStyle.chartContainer}>
         <LineChart
-          width={395}
+          width={450}
           height={250}
           data={accountdata}
-          margin={{ top: 25, right: 0, left: 0, bottom: 0 }}>
+          margin={{ top: 40, right: 20, left: 20, bottom: 0 }}>
           <XAxis dataKey="date" />
           <YAxis />
           <CartesianGrid strokeDasharray="3 3" />
@@ -53,10 +53,10 @@ const ChartPage = () => {
       <h3>카테고리별 지출</h3>
       <div className={chartStyle.chartContainer}>
         <LineChart
-          width={395}
+          width={450}
           height={250}
           data={categoryData}
-          margin={{ top: 10, right: 0, left: 0, bottom: 0 }}>
+          margin={{ top: 20, right: 20, left: 20, bottom: 0 }}>
           <XAxis dataKey="category" />
           <YAxis />
           <CartesianGrid strokeDasharray="3 3" />
