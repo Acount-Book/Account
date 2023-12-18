@@ -67,10 +67,12 @@ const AimSubPage = () => {
         </div>
       </div>
       <Link to="/aim">
-        <button onClick={handleSave}>저장</button>
+        <button onClick={handleSave} className={AimSub.join}>
+          저장
+        </button>
       </Link>
       <Link to="/aim">
-        <button>취소</button>
+        <button className={AimSub.cancel}>취소</button>
       </Link>
     </div>
   );
