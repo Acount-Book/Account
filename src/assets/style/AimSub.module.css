@@ -61,3 +61,14 @@
   background-color: #cacaca;
   cursor: pointer;
 }
+.imgContainer {
+  display: flex;
+  width: 80%;
+  background-color: #fff;
+  margin: 25px auto;
+  padding: 10px;
+  border-radius: 25px;
+}
+.imgContainer img {
+  height: 105px;
+}

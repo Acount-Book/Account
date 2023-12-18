@@ -76,3 +76,16 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.titleContainer {
+  background-color: #fff;
+  width: 88%;
+  margin: 15px auto;
+  border-radius: 25px;
+}
+.containerWrapper {
+  width: 83%;
+  margin: 40px auto;
+  background-color: #fff;
+  border-radius: 25px;
+  padding: 10px;
+}

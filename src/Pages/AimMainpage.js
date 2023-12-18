@@ -7,6 +7,7 @@ import { useGoalContext } from "../context/GoalContext";
 import AimMain from "../assets/style/AimMain.module.css";
 
 const AimMainpage = () => {
+  const path = process.env.PUBLIC_URL;
   const [istoggle, setIstoggle] = useState();
   const [selectedDate, setSelectedDate] = useState(new Date());
   const { goalData } = useGoalContext();
@@ -63,7 +64,7 @@ const AimMainpage = () => {
   return (
     <div>
       <h1 className={AimMain.Aim}>지출 목표</h1>
-      <div>
+      <div className={AimMain.titleContainer}>
         <div className={AimMain.status}>
           <h3>현재 목표</h3>
           <p onClick={handleToggleCalendar} className={AimMain.date}>
@@ -87,7 +88,10 @@ const AimMainpage = () => {
           </Link>
         </div>
       </div>
-
+      <div className={AimMain.containerWrapper}>
+        <h3>소비량</h3>
+        <img src={`${path}/images/pngwing.svg`} alt="" />
+      </div>
       {showModal && showCalendar && (
         <div onClick={handleCalendarClick}>
           <div>

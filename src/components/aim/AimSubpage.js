@@ -7,6 +7,7 @@ import { useGoalContext } from "../../context/GoalContext";
 import AimSub from "../../assets/style/AimSub.module.css";
 
 const AimSubPage = () => {
+  const path = process.env.PUBLIC_URL;
   const { setGoalAmount } = useContext(GoalAmountContext);
   const { updateGoalData } = useGoalContext();
   const [amount, setAmount] = useState("");
@@ -61,9 +62,15 @@ const AimSubPage = () => {
       </div>
 
       <div>
-        <div>
-          <h3>이미지</h3>
-          <h3>이미지</h3>
+        <div className={AimSub.imgContainer}>
+          <figure>
+            <img src={`${path}/images/good.png`} alt="good" />
+            <figcaption>목표 초과까지 안전한 경우</figcaption>
+          </figure>
+          <figure>
+            <img src={`${path}/images/bad.png`} alt="bad" />
+            <figcaption>목표 초과까지 위험할 경우</figcaption>
+          </figure>
         </div>
       </div>
       <Link to="/aim">
