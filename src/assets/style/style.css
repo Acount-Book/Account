@@ -87,10 +87,6 @@ ul {
   position: absolute;
   bottom: 10px;
   right: 10px;
-  border: none;
-  background-color: #111;
-  color: #fff;
-  padding: 7px;
-  font-weight: bold;
   cursor: pointer;
+  border: none;
 }
