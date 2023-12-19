@@ -10,6 +10,7 @@ import ChartPage from "../Pages/ChartPage";
 import AimSubPage from "./aim/AimSubpage";
 
 const Navigation = () => {
+  const path = process.env.PUBLIC_URL;
   const { isLoggedIn, logout } = useAuth();
   const navigate = useNavigate();
 
@@ -44,7 +45,10 @@ const Navigation = () => {
       </div>
 
       <button onClick={handleLogout} className="logoutBtn">
-        로그아웃
+        <img
+          src={`${path}/images/logout_FILL0_wght400_GRAD0_opsz24.svg`}
+          alt="log"
+        />
       </button>
     </div>
   );
