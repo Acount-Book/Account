@@ -34,10 +34,8 @@
 }
 .container .delBtn {
   border: none;
-  background-color: #34aaff;
-  padding: 4px 8px;
-  color: #fff;
-  font-weight: 700;
+  cursor: pointer;
+  background-color: #fff;
 }
 .titleBox {
   background-color: #f64545;
