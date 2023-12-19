@@ -7,6 +7,7 @@ import Dropdown from "../components/main/Dropdown";
 import { useExpenseContext } from "../context/ExpenseContext";
 import mainStyle from "../assets/style/Main.module.css";
 const MainAccount = () => {
+  const path = process.env.PUBLIC_URL;
   const {
     istoggle,
     setIstoggle,
@@ -92,7 +93,10 @@ const MainAccount = () => {
                     <button
                       className={mainStyle.delBtn}
                       onClick={() => handleDeleteExpense(date, expenseIndex)}>
-                      삭제
+                      <img
+                        src={`${path}/images/delete_FILL0_wght400_GRAD0_opsz24.svg`}
+                        alt="휴지통"
+                      />
                     </button>
                   </li>
                 ))}
