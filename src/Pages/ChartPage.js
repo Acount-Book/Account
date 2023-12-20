@@ -36,9 +36,21 @@ const ChartPage = () => {
   const categoryTotal = categoryData.map((data) => data.total);
   const categoryLabels = categoryData.map((data) => data.category);
 
+  const getRandomColor = () => {
+    const letters = "0123456789ABCDEF";
+    let color = "#";
+    for (let i = 0; i < 6; i++) {
+      color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+  };
+
+  const doughnutColors = categoryData.map(() => getRandomColor());
+
   return (
     <>
       <h2 className={chartStyle.december}>12월 통계</h2>
+
       <div className={chartStyle.chartContainer}>
         <Bar
           data={{
@@ -52,28 +64,64 @@ const ChartPage = () => {
               },
             ],
           }}
-          options={barChartOptions}
+          options={{
+            scales: {
+              x: {
+                grid: {
+                  display: false,
+                },
+              },
+              y: {
+                beginAtZero: true,
+                ticks: {
+                  precision: 0,
+                },
+                grid: {
+                  display: false,
+                },
+              },
+            },
+          }}
           height={180}
           width={300}
         />
       </div>
 
       <h3>카테고리별 지출</h3>
-      <div className={chartStyle.chartContainer}>
+      <div
+        className={chartStyle.chartContainer}
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          marginTop: "20px",
+        }}>
         <Doughnut
           data={{
             labels: categoryLabels,
             datasets: [
               {
                 data: categoryTotal,
-                backgroundColor: ["#FF6384", "#36A2EB", "#FFCE56", "#000"],
+                backgroundColor: doughnutColors,
               },
             ],
           }}
           options={{
             responsive: true,
             maintainAspectRatio: false,
+            plugins: {
+              legend: {
+                display: true,
+                position: "bottom",
+              },
+              layout: {
+                padding: {
+                  bottom: 150,
+                },
+              },
+            },
           }}
+          height={200}
+          width={"10vw"}
         />
       </div>
     </>
