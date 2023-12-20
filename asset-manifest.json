@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/Account/static/css/main.aadf2f60.css",
-    "main.js": "/Account/static/js/main.29ae55a3.js",
-    "static/media/PretendardVariable.woff2": "/Account/static/media/PretendardVariable.154ce88f9118a30d9d0e.woff2",
-    "static/media/네잎클로버 1.svg": "/Account/static/media/네잎클로버 1.6f18ef3945706ca02c43.svg",
-    "static/media/bookicon.svg": "/Account/static/media/bookicon.61a963cdda60aa716c72.svg",
-    "static/media/fastion.svg": "/Account/static/media/fastion.8282c269ff27ace8f998.svg",
-    "static/media/car.svg": "/Account/static/media/car.d12a5a707e748c258236.svg",
-    "static/media/culture.svg": "/Account/static/media/culture.d869e634d232545f52ea.svg",
-    "static/media/game.svg": "/Account/static/media/game.46cec03994b346a02fbe.svg",
-    "static/media/life.svg": "/Account/static/media/life.e23d020d66fe56e3175f.svg",
-    "static/media/Local cafe.svg": "/Account/static/media/Local cafe.7185874d892df6de0dce.svg",
-    "static/media/boxicon.svg": "/Account/static/media/boxicon.bf761acfbb594b2c9024.svg",
-    "static/media/food.svg": "/Account/static/media/food.e46dd9b3831256f74b30.svg",
-    "static/media/3사.svg": "/Account/static/media/3사.3ce4994de3650ecc7d0f.svg",
-    "index.html": "/Account/index.html",
-    "static/media/present.svg": "/Account/static/media/present.58cbcb744baa83a1fb15.svg",
-    "static/media/doctor.svg": "/Account/static/media/doctor.c73e629061593408c4c7.svg",
-    "static/media/Frame 361.svg": "/Account/static/media/Frame 361.da5abfd41cdc12aadb3b.svg",
-    "static/media/home.svg": "/Account/static/media/home.b87aacb56bdf24111ce1.svg",
-    "main.aadf2f60.css.map": "/Account/static/css/main.aadf2f60.css.map",
-    "main.29ae55a3.js.map": "/Account/static/js/main.29ae55a3.js.map"
+    "main.css": "/accountBook/static/css/main.2963ea86.css",
+    "main.js": "/accountBook/static/js/main.3e2a2b96.js",
+    "static/media/PretendardVariable.woff2": "/accountBook/static/media/PretendardVariable.154ce88f9118a30d9d0e.woff2",
+    "static/media/네잎클로버 1.svg": "/accountBook/static/media/네잎클로버 1.6f18ef3945706ca02c43.svg",
+    "static/media/bookicon.svg": "/accountBook/static/media/bookicon.61a963cdda60aa716c72.svg",
+    "static/media/fastion.svg": "/accountBook/static/media/fastion.8282c269ff27ace8f998.svg",
+    "static/media/car.svg": "/accountBook/static/media/car.d12a5a707e748c258236.svg",
+    "static/media/culture.svg": "/accountBook/static/media/culture.d869e634d232545f52ea.svg",
+    "static/media/game.svg": "/accountBook/static/media/game.46cec03994b346a02fbe.svg",
+    "static/media/life.svg": "/accountBook/static/media/life.e23d020d66fe56e3175f.svg",
+    "static/media/Local cafe.svg": "/accountBook/static/media/Local cafe.7185874d892df6de0dce.svg",
+    "static/media/boxicon.svg": "/accountBook/static/media/boxicon.bf761acfbb594b2c9024.svg",
+    "index.html": "/accountBook/index.html",
+    "static/media/food.svg": "/accountBook/static/media/food.e46dd9b3831256f74b30.svg",
+    "static/media/3사.svg": "/accountBook/static/media/3사.3ce4994de3650ecc7d0f.svg",
+    "static/media/present.svg": "/accountBook/static/media/present.58cbcb744baa83a1fb15.svg",
+    "static/media/doctor.svg": "/accountBook/static/media/doctor.c73e629061593408c4c7.svg",
+    "static/media/Frame 361.svg": "/accountBook/static/media/Frame 361.da5abfd41cdc12aadb3b.svg",
+    "static/media/home.svg": "/accountBook/static/media/home.b87aacb56bdf24111ce1.svg",
+    "main.2963ea86.css.map": "/accountBook/static/css/main.2963ea86.css.map",
+    "main.3e2a2b96.js.map": "/accountBook/static/js/main.3e2a2b96.js.map"
   },
   "entrypoints": [
-    "static/css/main.aadf2f60.css",
-    "static/js/main.29ae55a3.js"
+    "static/css/main.2963ea86.css",
+    "static/js/main.3e2a2b96.js"
   ]
 }
