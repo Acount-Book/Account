@@ -78,7 +78,7 @@ const MainAccount = () => {
           </div>
         </div>
 
-        <ul>
+        <ul className={mainStyle.ulWrapper}>
           {sortedDates.map((date, index) => (
             <section key={index} className={mainStyle.container}>
               <h3>{date}</h3>

@@ -37,16 +37,15 @@ ul {
   font-size: 0.9rem;
   position: relative;
 }
-.appBox .globalNav ul li:nth-child(1)::before {
+.appBox .globalNav ul li:nth-child(1) a::before {
   content: "";
   background: url(../images/bookicon.svg);
   width: 30px;
   height: 30px;
   display: block;
   position: absolute;
-  left: 25px;
 }
-.appBox .globalNav ul li:nth-child(2)::before {
+.appBox .globalNav ul li:nth-child(2) a::before {
   content: "";
   background: url(../images/baricon.png);
   width: 30px;
@@ -55,7 +54,7 @@ ul {
   position: absolute;
   left: 18px;
 }
-.appBox .globalNav ul li:nth-child(3)::before {
+.appBox .globalNav ul li:nth-child(3) a::before {
   content: "";
   background: url(../images/boxicon.svg);
   width: 30px;
@@ -64,7 +63,7 @@ ul {
   position: absolute;
   left: 18px;
 }
-.appBox .globalNav ul li:nth-child(4)::before {
+.appBox .globalNav ul li:nth-child(4) a::before {
   content: "";
   background: url(../images/네잎클로버\ 1.svg) no-repeat;
   width: 28px;
@@ -82,6 +81,7 @@ ul {
   display: block;
   color: #f64545;
   font-weight: bold;
+  cursor: pointer;
 }
 .logoutBtn {
   position: absolute;

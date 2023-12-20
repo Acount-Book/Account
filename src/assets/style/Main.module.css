@@ -324,3 +324,7 @@
   top: 35%;
   transform: translate(-38%, -50%);
 }
+.ulWrapper {
+  overflow-y: auto;
+  max-height: 445px;
+}
